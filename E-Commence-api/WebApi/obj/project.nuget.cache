@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wXQXtO7GIS5xxqDmPhCsiq91q4o0V2NKnptwa3BGT+dMM+oioqNQT/RM0wEr28NH7h26wJTlLOhNU3Bcl60YYA==",
+  "dgSpecHash": "WzKH3LosjVnNbNDf8ctF5NwAmMTfigPoy3DWhjhTDVq4n0Y/C8j+aW7dgQM9bwdRMqNcPEEllHzuA4MrjX7G1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence-Backend\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",

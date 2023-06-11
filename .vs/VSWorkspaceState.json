@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\E-Commence-api",
-    "\\E-Commence-ui"
+    "\\E-Commence-api\\WebApi",
+    "\\Local settings (.vs)\\E-Commence\\FileContentIndex"
   ],
-  "SelectedNode": "\\E-Commence-api",
+  "SelectedNode": "\\E-Commence-api\\E-Commence-Backend.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CtSMOu/hoKl1tr7HtdwOiCSnHj5cQ1IIokvJRxEgUmkDnrNFVjCYlxABeGl9x11D9EYEMoHBSO8oJ8o1QL22OA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
