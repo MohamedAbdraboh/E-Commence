@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\E-Commence-api",
+    "\\E-Commence-ui"
   ],
-  "SelectedNode": "\\C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence",
+  "SelectedNode": "\\E-Commence-api",
   "PreviewInSolutionExplorer": false
 }
