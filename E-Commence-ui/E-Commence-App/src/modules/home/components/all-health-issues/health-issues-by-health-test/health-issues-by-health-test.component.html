@@ -1,0 +1,29 @@
+<p-tree *ngIf="WarnningHealthIssuesGroups && WarnningHealthIssuesGroups.length > 0" class="m-5"
+  [value]="warnningHealthIssuesTree" selectionMode="single" (onNodeSelect)="healthIssueSelected($event)"></p-tree>
+
+<p-tree *ngIf="ErrorHealthIssuesGroups && ErrorHealthIssuesGroups.length > 0" class="m-5"
+  [value]="errorHealthIssuesTree" selectionMode="single" (onNodeSelect)="healthIssueSelected($event)"></p-tree>
+
+  <p-dialog [header]="selectedHealthIssue.name??''" [(visible)]="displayIssueDetails">
+    <p-table [value]="[{}]" responsiveLayout="scroll">
+      <ng-template pTemplate="body" let-label>
+        <tr>
+          <td>Title: </td>
+          <td>{{selectedHealthIssue.name}}</td>
+        </tr>
+        <tr [ngSwitch]="selectedHealthIssue.level">
+          <td>Level: </td>
+          <span *ngSwitchCase="1" class="node-status-badge status-warning">Warning</span>
+          <span *ngSwitchCase="2" class="node-status-badge status-error">Error</span>
+        </tr>
+        <tr>
+          <td>Description: </td>
+          <td>{{selectedHealthIssue.description}}</td>
+        </tr>
+        <tr>
+          <td>Issued Date: </td>
+          <td>{{selectedHealthIssue.issuedDate| date:"fullDate"}}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-dialog>

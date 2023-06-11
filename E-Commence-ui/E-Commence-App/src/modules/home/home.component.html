@@ -1,0 +1,20 @@
+<div>
+  <p-tabView>
+    <p-tabPanel header="Status">
+      <app-status></app-status>
+    </p-tabPanel>
+    <p-tabPanel header="All Health Issues">
+      <ng-template pTemplate="content">
+        <app-all-health-issues></app-all-health-issues>
+      </ng-template>
+    </p-tabPanel>
+    <p-tabPanel header="Configuration">
+      <ng-template pTemplate="content">
+      </ng-template>
+    </p-tabPanel>
+    <p-tabPanel header="All Recent Commands">
+      <ng-template pTemplate="content">
+      </ng-template>
+    </p-tabPanel>
+  </p-tabView>
+</div>
