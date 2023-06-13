@@ -10,3 +10,8 @@ C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\
 C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
 C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
 C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
+C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\bin\Debug\net7.0\Infrastructure.runtimeconfig.json
+C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\bin\Debug\net7.0\Domain.dll
+C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\bin\Debug\net7.0\Domain.pdb
+C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CopyComplete
+C:\Users\mohamed.abdraboh\Source\Repos\E-Commence\E-Commence-api\Infrastructure\obj\Debug\net7.0\Infrastructure.genruntimeconfig.cache

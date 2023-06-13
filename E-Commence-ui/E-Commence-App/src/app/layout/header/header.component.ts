@@ -20,27 +20,12 @@ export class HeaderComponent implements OnInit {
   isLoggedIn: boolean = false;
   userName: string = '';
 
-  constructor(
-    // private authService: AuthService,
-    // private userDataService: UserDataService,
-    private router: Router
-  ) {
-    // this.isLoggedIn = this.authService.checkIsLoggedIn();
-    // this.authService.isloggedInValue.subscribe(value => {
-    //   this.isLoggedIn = value;
-    // });
-    // this.userName = this.userDataService.userData?.userName||"";
-    // this.userDataService.userDataValue.subscribe(value =>{
-    //   this.userName = value?.userName||"";
-    // });
-  }
+  constructor() {}
 
   ngOnInit() {
     this.fillMenu();
   }
-  logout() {
-    // this.authService.logout();
-  }
+  logout() {}
 
   fillMenu() {
     this.items = [
@@ -55,13 +40,13 @@ export class HeaderComponent implements OnInit {
         routerLinkActiveOptions: { exact: true },
       },
       {
-        label: 'Nodes',
-        routerLink: ['/nodes'],
+        label: 'Stores',
+        routerLink: ['/stores'],
         routerLinkActiveOptions: { exact: true },
       },
       {
-        label: 'Services',
-        routerLink: ['/services'],
+        label: 'Products',
+        routerLink: ['/products'],
         routerLinkActiveOptions: { exact: true },
       },
     ];

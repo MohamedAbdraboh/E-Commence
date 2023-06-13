@@ -5,6 +5,6 @@
     "\\E-Commence-api\\Application",
     "\\E-Commence-api\\WebApi"
   ],
-  "SelectedNode": "\\E-Commence-api\\Application\\DependencyInjection.cs",
+  "SelectedNode": "\\E-Commence-api\\WebApi\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

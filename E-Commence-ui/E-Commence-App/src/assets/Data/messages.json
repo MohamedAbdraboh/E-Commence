@@ -4,58 +4,5 @@
       "UnspecifiedError": "Unspecified error, please contact system administrator.",
       "FillMandatoryFields": "Please fill all madatory fields."
     }
-  },
-  "Authentication": {
-    "Message": {
-      "Authentication:InvalidEmailOrPassword": "Username or Password is invalid",
-      "Authentication:AccountIsDisabled": "Account is invalid",
-      "Authentication:AccountIsDeleted": "Account is invalid",
-      "Authentication:ModelIsNotValid": "Unspecified error, please contact system administrator",
-      "Authentication:Exception": "Unspecified error, please contact system administrator",
-      "Authentication:Invalidtoken": "Unspecified error, please contact system administrator",
-      "Authentication:InvalidUserData": "Unspecified error, please contact system administrator"
-    }
-  },
-  "Roles": {
-    "Message": {
-      "RoleAddedSuccessfully": "Role has been added successfully",
-      "RoleUpdatedSuccessfully": "Role has been updated successfully",
-      "RoleDeletedSuccessfully": "Role has been deleted successfully",
-      "SelectedRolesDeletedSuccessfully": "Selected roles have been deleted successfully",
-      "ChoosePermission": "Please choose at least one permission",
-      "InvalidObject": "Request is invalid",
-      "InvalidForm": "Form Name is invalid",
-      "InvalidName": "Role Name is invalid",
-      "InvalidPermissions": "Permissions is invalid, please choose at least on permission",
-      "RoleNameExisting": "Role Name is already exist",
-      "RoleNotExisting": "Role is not exist",
-      "RowVersionErr": "This Role is already updated, please refresh the page"
-    }
-  },
-  "Users": {
-    "Message": {
-      "UserAddedSuccessfully": "User has been added successfully",
-      "UserUpdatedSuccessfully": "User has been updated successfully",
-      "InvalidForm": "Form is invalid",
-      "InvalidObject": "Request is invalid",
-      "InvalidFirstName": "First Name is invalid",
-      "InvalidLastName": "Last Name is invalid",
-      "InvalidUserName": "User Name is invalid",
-      "InvalidEmail": "Email is invalid",
-      "InvalidRole": "User Roles is invalid",
-      "InvalidPassword": "Password is invalid",
-      "InvalidPhoneNumber": "Phone Number is invalid",
-      "NameExisting": "Name is already exist",
-      "UserNameExisting": "User Name is already exist",
-      "EmailExisting": "Email is already exist",
-      "UserRolesNotExisting": "User Roles is already exist",
-      "PhoneNumberExisting": "Phone Number is already exist",
-      "CanNotCreateUser": "Can not create this user",
-      "AccountIsDisabled": "Account is disabled",
-      "InvalidUsernameorPassword": "Invalid user name or password",
-      "InvalidUserType": "User Type is already exist",
-      "UserNotExisting": "User is not exist",
-      "RowVersionErr": "This User Name is already updated, please refresh the page"
-    }
   }
 }
