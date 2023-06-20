@@ -17,6 +17,7 @@ export class ProductsComponent implements OnInit {
   selectedProducts!: Product[] | null;
   submitted: boolean = false;
   statuses!: any[];
+  tab: number = 1;
 
   constructor(
     // private productService: ProductService,
