@@ -1,5 +1,7 @@
-﻿using Domain.Abstractions.Interfaces;
-namespace Domain.Entities
+﻿
+using ECommerce.Domain.Abstractions.Base;
+
+namespace ECommerce.Domain.Entities
 {
     public class Product : EntityBase<Guid>
     {

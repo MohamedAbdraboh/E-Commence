@@ -1,7 +1,6 @@
-﻿using Domain.Abstractions.Interfaces;
-using System.Xml.Linq;
+﻿using ECommerce.Domain.Abstractions.Base;
 
-namespace Domain.Entities;
+namespace ECommerce.Domain.Entities;
 
 public class Store : EntityBase<Guid>
 {

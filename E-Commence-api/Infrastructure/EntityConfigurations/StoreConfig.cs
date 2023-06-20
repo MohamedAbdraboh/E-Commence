@@ -1,4 +1,4 @@
-﻿using Domain.Entities;
+﻿using ECommerce.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,22 +8,17 @@ internal class StoreConfig : IEntityTypeConfiguration<Store>
 {
     public void Configure(EntityTypeBuilder<Store> builder)
     {
-        builder.ToTable("ECommence.Stores");
+        builder.ToTable("Stores");
         builder.HasKey(s => s.Id);
         builder.Property(s => s.Id).ValueGeneratedNever();
         builder.Property(s => s.Name).IsRequired().HasMaxLength(100);
 
-        builder.HasMany(s => s.Branches).WithOne()
-            .HasPrincipalKey(c => c.Id)
-            .HasForeignKey("StoreId")
-            .OnDelete(DeleteBehavior.Cascade)
-            .IsRequired();
+        builder.HasMany<Branch>(g => g.Branches)
+                .WithOne(s => s.Store)
+                .HasForeignKey(s => s.StoreId);
 
-        builder.HasMany(c => c.Products).WithOne()
-            .HasPrincipalKey(c => c.Id)
-            .HasForeignKey("StoreId")
-            .OnDelete(DeleteBehavior.Cascade)
-            .IsRequired();
-
+        builder.HasMany<Product>(g => g.Products)
+                .WithOne(s => s.Store)
+                .HasForeignKey(s => s.StoreId);
     }
 }

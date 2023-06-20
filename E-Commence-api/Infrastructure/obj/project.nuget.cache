@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LUskFTzzQd5VIsEQjxyJUzrBuASnUlyNGGoqLtBbgSKkjq/PmaL2EbEJPd7lbNUZyMrdjZT6cxEbpILubqQDeA==",
+  "dgSpecHash": "F1XRSZ0sRUSBY/KNSjcQNfGT8o/pNJTAKvF7D9Ac3Q30Epckf7+21gShL849v+Gn0xK73qs1S/jllMdW9Po4dA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

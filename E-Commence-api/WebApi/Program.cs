@@ -13,10 +13,10 @@ builder.Services
     .AddInfrastructure()
     .AddPresentation();
 
-builder.Services.AddDbContext<StoreDbContext>(ops =>
-{
-    ops.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionStrings"));
-});
+// Add services to the container.
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+builder.Services.AddDbContext<ECommerceDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 
 builder.Services.AddControllers();

@@ -10,19 +10,19 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Migrations
 {
-    [DbContext(typeof(StoreDbContext))]
-    partial class StoreDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ECommerceDbContext))]
+    partial class ECommerceDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.5")
+                .HasAnnotation("ProductVersion", "7.0.7")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Domain.Entities.Branch", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Branch", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
@@ -50,9 +50,6 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("StoreId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("StoreId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTimeOffset?>("UpdatedAt")
                         .HasColumnType("datetimeoffset");
 
@@ -66,12 +63,10 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("StoreId");
 
-                    b.HasIndex("StoreId1");
-
-                    b.ToTable("ECommence.Branches", (string)null);
+                    b.ToTable("Branches", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Entities.BranchProduct", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.BranchProduct", b =>
                 {
                     b.Property<int>("BranchId")
                         .HasColumnType("int");
@@ -109,10 +104,10 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("ProductId1");
 
-                    b.ToTable("ECommence.BranchProducts", (string)null);
+                    b.ToTable("BranchProducts", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Entities.Product", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Product", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
@@ -135,9 +130,6 @@ namespace Infrastructure.Migrations
                     b.Property<Guid>("StoreId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("StoreId1")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTimeOffset?>("UpdatedAt")
                         .HasColumnType("datetimeoffset");
 
@@ -148,12 +140,10 @@ namespace Infrastructure.Migrations
 
                     b.HasIndex("StoreId");
 
-                    b.HasIndex("StoreId1");
-
-                    b.ToTable("ECommence.Products", (string)null);
+                    b.ToTable("Products", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Entities.Store", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Store", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("uniqueidentifier");
@@ -180,33 +170,27 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ECommence.Stores", (string)null);
+                    b.ToTable("Stores", (string)null);
                 });
 
-            modelBuilder.Entity("Domain.Entities.Branch", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Branch", b =>
                 {
-                    b.HasOne("Domain.Entities.Store", null)
+                    b.HasOne("ECommerce.Domain.Entities.Store", "Store")
                         .WithMany("Branches")
                         .HasForeignKey("StoreId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Store", "Store")
-                        .WithMany()
-                        .HasForeignKey("StoreId1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Store");
                 });
 
-            modelBuilder.Entity("Domain.Entities.BranchProduct", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.BranchProduct", b =>
                 {
-                    b.HasOne("Domain.Entities.Branch", "Branch")
+                    b.HasOne("ECommerce.Domain.Entities.Branch", "Branch")
                         .WithMany("BranchProducts")
                         .HasForeignKey("BranchId1");
 
-                    b.HasOne("Domain.Entities.Product", "Product")
+                    b.HasOne("ECommerce.Domain.Entities.Product", "Product")
                         .WithMany("BranchProducts")
                         .HasForeignKey("ProductId1");
 
@@ -215,32 +199,28 @@ namespace Infrastructure.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Product", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Product", b =>
                 {
-                    b.HasOne("Domain.Entities.Store", null)
+                    b.HasOne("ECommerce.Domain.Entities.Store", "Store")
                         .WithMany("Products")
                         .HasForeignKey("StoreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Entities.Store", "Store")
-                        .WithMany()
-                        .HasForeignKey("StoreId1");
-
                     b.Navigation("Store");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Branch", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Branch", b =>
                 {
                     b.Navigation("BranchProducts");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Product", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Product", b =>
                 {
                     b.Navigation("BranchProducts");
                 });
 
-            modelBuilder.Entity("Domain.Entities.Store", b =>
+            modelBuilder.Entity("ECommerce.Domain.Entities.Store", b =>
                 {
                     b.Navigation("Branches");
 

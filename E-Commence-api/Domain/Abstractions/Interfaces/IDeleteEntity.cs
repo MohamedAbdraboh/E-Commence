@@ -1,4 +1,4 @@
-namespace Domain.Abstractions.Interfaces;
+namespace ECommerce.Domain.Abstractions.Interfaces;
 
 public interface IDeleteEntity
 {

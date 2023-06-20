@@ -1,4 +1,4 @@
-﻿using Domain.Entities;
+﻿using ECommerce.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -8,7 +8,7 @@ internal class ProductConfig : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {
-        builder.ToTable("ECommence.Products");
+        builder.ToTable("Products");
         builder.HasKey(b => b.Id);
         builder.Property(b => b.Id).ValueGeneratedNever();
     }

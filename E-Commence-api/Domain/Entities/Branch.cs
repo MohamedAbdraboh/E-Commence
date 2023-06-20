@@ -1,7 +1,7 @@
-﻿using Domain.Abstractions.Interfaces;
-using System.Diagnostics;
+﻿using ECommerce.Domain.Abstractions.Base;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Domain.Entities
+namespace ECommerce.Domain.Entities
 {
     public class Branch : EntityBase<Guid>
     {
