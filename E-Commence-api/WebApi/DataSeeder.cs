@@ -5,13 +5,6 @@ namespace Infrastructure.EntityConfigurations
 {
     public class DataSeeder
     {
-        //private readonly ECommerceDbContext _dbContext;
-
-        //public DataSeeder(ECommerceDbContext dbContext)
-        //{
-        //    _dbContext= dbContext;
-        //}
-
         public static void Seed(IApplicationBuilder applicationBuilder)
         {
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())

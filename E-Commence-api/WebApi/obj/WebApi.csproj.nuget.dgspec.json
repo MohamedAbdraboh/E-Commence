@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj": {
+    "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Application\\obj\\",
         "projectStyle": "PackageReference",
@@ -34,8 +34,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj"
+              "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj"
               }
             }
           }
@@ -75,12 +75,12 @@
         }
       }
     },
-    "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
+    "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\obj\\",
         "projectStyle": "PackageReference",
@@ -136,12 +136,12 @@
         }
       }
     },
-    "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -166,8 +166,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj"
+              "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj"
               }
             }
           }
@@ -231,12 +231,12 @@
         }
       }
     },
-    "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj",
+        "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj",
         "packagesPath": "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
@@ -261,8 +261,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj"
+              "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Domain\\Domain.csproj"
               }
             }
           }
@@ -302,14 +302,14 @@
         }
       }
     },
-    "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages"
@@ -332,14 +332,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj"
+              "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Application\\Application.csproj"
               },
-              "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj": {
-                "projectPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj"
+              "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj": {
+                "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Presentation\\Presentation.csproj"
               }
             }
           }
