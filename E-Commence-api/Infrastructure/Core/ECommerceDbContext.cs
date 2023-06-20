@@ -2,10 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-//namespace Datalake.Management.EntityFrameworkCore.Core;
 namespace Infrastructure.Abstractions;
 
-public class ECommerceDbContext : Microsoft.EntityFrameworkCore.DbContext
+public class ECommerceDbContext : DbContext
 {
     public DbSet<Store> Stores { get; set; } = default!;
     public DbSet<Product> Products { get; set; } = default!;
@@ -28,35 +27,74 @@ public class ECommerceDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
         base.OnModelCreating(builder);
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        //DataSeeding();
+    }
 
-        //builder.Entity<Store>().ToTable("ECommerce.Stores");
-        //builder.Entity<Store>().HasKey(s => s.Id);
-        //builder.Entity<Store>().Property(s => s.Id).ValueGeneratedNever();
-        //builder.Entity<Store>().Property(s => s.Name).IsRequired().HasMaxLength(100);
-        //builder.Entity<Store>().HasMany(s => s.Branches).WithOne()
-        //    .HasPrincipalKey(c => c.Id)
-        //    .HasForeignKey("StoreId")
-        //    .OnDelete(DeleteBehavior.Cascade)
-        //    .IsRequired();
-        //builder.Entity<Store>().HasMany(c => c.Products).WithOne()
-        //    .HasPrincipalKey(c => c.Id)
-        //    .HasForeignKey("StoreId")
-        //    .OnDelete(DeleteBehavior.Cascade)
-        //    .IsRequired();
+    private void DataSeeding()
+    {
+        if (Stores is not null)
+        {
+            if (Stores.Count() == 0)
+            {
+                for (int i = 1; i < 4; i++)
+                {
+                    var store = new Store
+                    {
+                        Name = $"Store {i}",
+                        Category = "Technology",
+                        Img = $"technologyStore{i}.png",
+                        CreatedAt = DateTimeOffset.UtcNow
+                    };
 
-        //builder.Entity<Branch>().ToTable("ECommerce.Branches");
-        //builder.Entity<Branch>().HasKey(b => b.Id);
-        //builder.Entity<Branch>().Property(b => b.Id).ValueGeneratedNever();
-        //builder.Entity<Branch>().HasIndex(b => b.BranchNumber).IsUnique();
-        //builder.Entity<Branch>().Property(b => b.BranchNumber).IsRequired().HasMaxLength(100);
+                    IList<Product> defaultProducts = new List<Product>();
+                    for (int ii = 1; ii < 7; ii++)
+                    {
+                        defaultProducts.Add(
+                        new Product
+                        {
+                            Name = $"Product {ii}",
+                            Description = $"Product {ii} Description",
+                            Price = 10,
+                            Category = "Technology",
+                            Img = $"techProduct{ii}.png",
+                            CreatedAt = DateTimeOffset.UtcNow,
+                            StoreId = store.Id
+                        });
+                    }
 
-        //builder.Entity<Product>().ToTable("ECommerce.Products");
-        //builder.Entity<Product>().HasKey(b => b.Id);
-        //builder.Entity<Product>().Property(b => b.Id).ValueGeneratedNever();
+                    IList<Branch> defaultBrances = new List<Branch>();
+                    for (int ii = 1; ii < 7; ii++)
+                    {
+                        var branch = new Branch
+                        {
+                            Name = $"Branch {ii}",
+                            BranchNumber = $"BranchNumber-{ii}",
+                            Address = $"Street {ii} - Building {ii}",
 
-        //builder.Entity<BranchProduct>().ToTable("ECommerce.BranchProducts");
-        //builder.Entity<BranchProduct>().HasKey(bp => bp.Id);
-        //builder.Entity<BranchProduct>().Property(bp => bp.Id).ValueGeneratedNever();
-        //builder.Entity<BranchProduct>().HasKey(bp => new { bp.BranchId, bp.ProductId });
+                            CreatedAt = DateTimeOffset.UtcNow,
+                            StoreId = store.Id
+                        };
+
+                        foreach (var product in defaultProducts)
+                        {
+                            branch.BranchProducts = new List<BranchProduct>();
+                            branch?.BranchProducts?.Add(new BranchProduct
+                            {
+                                ProductId = product.Id,
+                                BranchId = branch.Id,
+                                Amount = ii,
+                                CreatedAt = DateTimeOffset.UtcNow,
+                            });
+                        }
+                        defaultBrances.Add(branch);
+                    }
+
+                    Stores.Add(store);
+                }
+
+                SaveChangesAsync();
+            }
+        }
+
     }
 }

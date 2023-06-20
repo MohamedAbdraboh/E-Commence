@@ -3,7 +3,9 @@
     "",
     "\\E-Commence-api",
     "\\E-Commence-api\\Application",
+    "\\E-Commence-api\\Infrastructure",
     "\\E-Commence-api\\WebApi"
   ],
+  "SelectedNode": "\\E-Commence-api\\Infrastructure\\obj",
   "PreviewInSolutionExplorer": false
 }

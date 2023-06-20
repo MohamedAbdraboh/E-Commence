@@ -17,6 +17,8 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Img = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UpdatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
@@ -59,8 +61,11 @@ namespace Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Amount = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
+                    Img = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     StoreId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -83,10 +88,9 @@ namespace Infrastructure.Migrations
                 name: "BranchProducts",
                 columns: table => new
                 {
-                    BranchId = table.Column<int>(type: "int", nullable: false),
-                    ProductId = table.Column<int>(type: "int", nullable: false),
-                    BranchId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    ProductId1 = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    BranchId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ProductId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Amount = table.Column<int>(type: "int", nullable: false),
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedAt = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -98,13 +102,13 @@ namespace Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_BranchProducts", x => new { x.BranchId, x.ProductId });
                     table.ForeignKey(
-                        name: "FK_BranchProducts_Branches_BranchId1",
-                        column: x => x.BranchId1,
+                        name: "FK_BranchProducts_Branches_BranchId",
+                        column: x => x.BranchId,
                         principalTable: "Branches",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_BranchProducts_Products_ProductId1",
-                        column: x => x.ProductId1,
+                        name: "FK_BranchProducts_Products_ProductId",
+                        column: x => x.ProductId,
                         principalTable: "Products",
                         principalColumn: "Id");
                 });
@@ -121,14 +125,9 @@ namespace Infrastructure.Migrations
                 column: "StoreId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_BranchProducts_BranchId1",
+                name: "IX_BranchProducts_ProductId",
                 table: "BranchProducts",
-                column: "BranchId1");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_BranchProducts_ProductId1",
-                table: "BranchProducts",
-                column: "ProductId1");
+                column: "ProductId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_StoreId",

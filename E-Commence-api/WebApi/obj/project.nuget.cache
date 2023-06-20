@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yssWcDHiN0r37XkflNk95/r2v3eTDqHS53vTjg1NLWoxuctdPI3PJb1t2P4aUeuLoSMYIeJAyZboC0uQgQyxYQ==",
+  "dgSpecHash": "o8o0i1wrcpxV7zndot4nUAQwbSDH4GPu1yZQ6RZcsMwR/FC5HqF/qYRaXJ2ukYPB/G/BJVpdN6WgDNPz28FJzw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.7\\microsoft.entityframeworkcore.7.0.7.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.7\\microsoft.entityframeworkcore.abstractions.7.0.7.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.7\\microsoft.entityframeworkcore.analyzers.7.0.7.nupkg.sha512",
-    "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.5\\microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512",
+    "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.7\\microsoft.entityframeworkcore.design.7.0.7.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.7\\microsoft.entityframeworkcore.relational.7.0.7.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.7\\microsoft.entityframeworkcore.sqlserver.7.0.7.nupkg.sha512",
     "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

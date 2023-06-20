@@ -65,7 +65,6 @@ public class ProductService : IProductService
             existingProduct.Name = product.Name;
             existingProduct.Description = product.Description;
             existingProduct.Img = product.Img;
-            existingProduct.Amount = product.Amount;
             existingProduct.Price = product.Price;
             existingProduct.UpdatedAt = DateTimeOffset.UtcNow;
 

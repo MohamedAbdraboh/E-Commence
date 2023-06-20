@@ -1,6 +1,7 @@
 using Application;
 using Infrastructure;
 using Infrastructure.Abstractions;
+using Infrastructure.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Presentation;
@@ -24,17 +25,30 @@ builder.Services
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+//builder.Services.AddTransient<DataSeeder>();
 builder.Services.AddDbContext<ECommerceDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+//if (args.Length == 1 && args[0].ToLower() == "seeddata")
+//    SeedData(app);
+
+//void SeedData(IHost app)
+//{
+//    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+//    using (var scope = scopedFactory?.CreateScope())
+//    {
+//        var service = scope.ServiceProvider.GetService<DataSeeder>();
+//        service?.Seed();
+//    }
+//}
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
 
+var app = builder.Build();
 app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().SetIsOriginAllowed((host) => true).AllowCredentials());
 
 // Configure the HTTP request pipeline.
@@ -49,5 +63,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+DataSeeder.Seed(app);
 
 app.Run();
