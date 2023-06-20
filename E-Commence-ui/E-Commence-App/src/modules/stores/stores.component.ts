@@ -10,6 +10,8 @@ import { Store } from './interfaces/Store';
 })
 export class StoresComponent implements OnInit {
   stores: Store[] = [];
+  tab: number = 1;
+
   constructor(
     private activatedRoute: ActivatedRoute,
     private messageService: MessageService,

@@ -1,4 +1,4 @@
-<section id="team" class="team section-bg">
+<section id="team" class="team section-bg portfoio">
   <div class="container aos-init" data-aos="fade-up">
 
     <div class="section-title">
@@ -7,7 +7,21 @@
     </div>
 
     <div class="row">
-      <app-store-card *ngFor="let str of stores;" [store]="str"></app-store-card>
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li [ngClass]="{'filter-active' : tab == 1}" (click)="tab = 1">Clicent View</li>
+          <li [ngClass]="{'filter-active' : tab == 2}" (click)="tab = 2">Admin View</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" [ngSwitch]="tab">
+      <div *ngSwitchCase="2">
+
+      </div>
+      <div *ngSwitchCase="1">
+        <app-store-card *ngFor="let str of stores;" [store]="str"></app-store-card>
+      </div>
     </div>
 
   </div>
