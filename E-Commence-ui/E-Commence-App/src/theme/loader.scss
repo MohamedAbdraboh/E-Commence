@@ -1,0 +1,93 @@
+.d-none{display:none!important}
+
+.loader {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:999999;
+	background: rgba(0,0,0,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#loading-bar-spinner-component {
+    background: rgba(255, 255, 255, 0.97) !important;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    // .spinner-icon {
+    //   top: calc(50% - (40px / 2));
+    //   right: calc(50% - (40px / 2));
+    //   position: fixed;
+    //   display: block;
+    //   color: #fff;
+    // }
+    // .svg-loader {
+    //   position: absolute;
+    //   left: 50%;
+    //   top: 50%;
+    // }
+    .loader-wrapper {
+      border: 4px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 4px solid var(--primary-color);
+      width: 150px;
+      height: 150px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      background: transparent;
+    }
+  
+    .wrapper {
+      background: image("logoImage2.png") center no-repeat;
+      background-size: 50%;
+      width: 152px;
+      height: 152px;
+    }
+  }
+  
+#loading-bar-spinner-component .loader-wrapper {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid var(--primary-color);
+    width: 150px;
+    height: 150px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    background: transparent;
+  }
+
+  #loading-bar-spinner-component .wrapper {
+    background: url("../assets/images/Master_Logo_RGB.png") center no-repeat;
+    background-size: 50%;
+    width: 152px;
+    height: 152px;
+  }
+
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }

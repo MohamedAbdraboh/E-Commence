@@ -7,7 +7,14 @@ using Presentation;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
+builder.Services.AddCors(options =>
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    })
+);
 
 // Add services to the container.
 builder.Services
@@ -27,6 +34,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().SetIsOriginAllowed((host) => true).AllowCredentials());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

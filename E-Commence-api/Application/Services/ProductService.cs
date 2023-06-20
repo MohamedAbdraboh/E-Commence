@@ -62,6 +62,9 @@ public class ProductService : IProductService
             if (existingProduct is null)
                 return new Error("Product:ProductNotFound", $"Product with Id {productId} was not found.");
 
+            existingProduct.Name = product.Name;
+            existingProduct.Description = product.Description;
+            existingProduct.Img = product.Img;
             existingProduct.Amount = product.Amount;
             existingProduct.Price = product.Price;
             existingProduct.UpdatedAt = DateTimeOffset.UtcNow;

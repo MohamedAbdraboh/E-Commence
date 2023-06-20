@@ -9,6 +9,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SharedModule } from 'src/modules/shared/shared.module';
 import { MenubarModule } from 'primeng/menubar';
+import { HomeModule } from 'src/modules/home/home.module';
+import { ProductsModule } from 'src/modules/products/products.module';
 
 const appInitializerFn = (appConfig: AppConfigService) => {
   return () => {
@@ -23,7 +25,14 @@ const messagesInitializerFn = (messages: MessagesService) => {
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
-  imports: [SharedModule, BrowserModule, AppRoutingModule, MenubarModule],
+  imports: [
+    HomeModule,
+    ProductsModule,
+    SharedModule,
+    BrowserModule,
+    AppRoutingModule,
+    MenubarModule,
+  ],
   providers: [
     AppConfigService,
     {

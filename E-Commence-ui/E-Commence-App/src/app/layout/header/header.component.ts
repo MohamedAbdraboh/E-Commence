@@ -34,11 +34,11 @@ export class HeaderComponent implements OnInit {
         routerLink: ['/home'],
         routerLinkActiveOptions: { exact: true },
       },
-      {
-        label: 'Admin',
-        routerLink: ['/admin/panal'],
-        routerLinkActiveOptions: { exact: true },
-      },
+      // {
+      //   label: 'Admin',
+      //   routerLink: ['/admin/panal'],
+      //   routerLinkActiveOptions: { exact: true },
+      // },
       {
         label: 'Stores',
         routerLink: ['/stores'],
