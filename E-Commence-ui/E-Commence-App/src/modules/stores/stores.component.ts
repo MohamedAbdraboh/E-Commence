@@ -29,5 +29,6 @@ export class StoresComponent implements OnInit {
       },
       (error) => console.error('Error: ', error)
     );
+    console.log('this.stores', this.stores);
   }
 }

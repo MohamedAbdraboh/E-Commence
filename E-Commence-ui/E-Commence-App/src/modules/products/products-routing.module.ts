@@ -13,7 +13,7 @@ const routes: Routes = [
   // {
   //   path: 'products/:id',
   //   component: ProductComponent,
-  //   resolve: {Cluster: GetProductResolver}
+  //   resolve: {Product: GetProductResolver}
   // },
 ];
 

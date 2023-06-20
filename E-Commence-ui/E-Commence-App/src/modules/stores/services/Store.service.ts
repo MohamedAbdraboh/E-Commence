@@ -16,7 +16,6 @@ export class StoreService {
   }
 
   getStores(): Observable<Result<Store[]>> {
-    //https://localhost:7233/api/Stores
     return this.http.get<Result<Store[]>>(`${this.BaseUrl}`);
   }
 

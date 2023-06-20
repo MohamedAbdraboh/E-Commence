@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StoresComponent } from './stores.component';
+import { GetAllStoresResolver } from './resolvers/get-all-Store.resolver';
 // import { GetProductResolver } from './resolvers/get-product.resolver';
 
 const routes: Routes = [
   {
-    path: 'Stores',
+    path: 'stores',
     component: StoresComponent,
-    // resolve: { Products: GetAllProductsResolver },
+    resolve: { Stores: GetAllStoresResolver },
   },
   // {
-  //   path: 'products/:id',
+  //   path: 'Stores/:id',
   //   component: ProductComponent,
-  //   resolve: {Cluster: GetProductResolver}
+  //   resolve: {Store: GetProductResolver}
   // },
 ];
 

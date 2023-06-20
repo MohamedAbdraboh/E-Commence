@@ -7,7 +7,7 @@
     </div>
 
     <div class="row">
-      <app-store-card></app-store-card>
+      <app-store-card *ngFor="let str of stores;" [store]="str"></app-store-card>
     </div>
 
   </div>
