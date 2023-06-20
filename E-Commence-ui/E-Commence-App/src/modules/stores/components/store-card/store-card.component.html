@@ -1,4 +1,4 @@
-<div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="100">
+<div class="aos-init m-2" data-aos="fade-up" data-aos-delay="100">
   <div class="member d-flex align-items-start">
     <div class="pic"><img src="assets/images/clothes.png" class="img-fluid" alt=""></div>
     <!-- <div class="pic"><img :src="store.img" class="img-fluid" alt=""></div> -->
@@ -7,10 +7,8 @@
       <span>Clothes</span>
       <p>we have all you are looking for</p>
       <div class="social">
-        <a href=""><i class="ri-twitter-fill"></i></a>
-        <a href=""><i class="ri-facebook-fill"></i></a>
-        <a href=""><i class="ri-instagram-fill"></i></a>
-        <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+        <a title="Brances"><i class="ri-fill">{{store?.branchesNumber}}</i></a>
+        <a title="Products"><i class="ri-fill">{{store?.productsNumber}}</i></a>
       </div>
     </div>
   </div>

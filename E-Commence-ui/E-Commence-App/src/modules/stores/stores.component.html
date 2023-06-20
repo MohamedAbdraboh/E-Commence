@@ -19,8 +19,8 @@
       <div *ngSwitchCase="2">
 
       </div>
-      <div *ngSwitchCase="1">
-        <app-store-card *ngFor="let str of stores;" [store]="str"></app-store-card>
+      <div class="row" *ngSwitchCase="1">
+        <app-store-card class="col-lg-6" *ngFor="let str of stores;" [store]="str"></app-store-card>
       </div>
     </div>
 
