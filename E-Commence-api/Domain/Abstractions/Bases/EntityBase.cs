@@ -12,5 +12,5 @@ public abstract class EntityBase<TKey> : IAuditEntity, IDeleteEntity, IEntity<TK
     public DateTimeOffset? UpdatedAt { get; set; }
     public string? UpdatedBy { get; set; }
 
-    public bool IsDeleted { get; set; }
+    public bool IsDeleted { get; set; } = false;
 }

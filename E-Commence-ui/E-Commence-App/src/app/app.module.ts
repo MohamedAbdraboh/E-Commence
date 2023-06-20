@@ -11,6 +11,8 @@ import { SharedModule } from 'src/modules/shared/shared.module';
 import { MenubarModule } from 'primeng/menubar';
 import { HomeModule } from 'src/modules/home/home.module';
 import { ProductsModule } from 'src/modules/products/products.module';
+import { StoresModule } from 'src/modules/stores/stores.module';
+import { BranchesModule } from 'src/modules/Branches/Branches.module';
 
 const appInitializerFn = (appConfig: AppConfigService) => {
   return () => {
@@ -27,6 +29,8 @@ const messagesInitializerFn = (messages: MessagesService) => {
   declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [
     HomeModule,
+    StoresModule,
+    BranchesModule,
     ProductsModule,
     SharedModule,
     BrowserModule,

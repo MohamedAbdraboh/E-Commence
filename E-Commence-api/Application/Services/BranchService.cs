@@ -33,7 +33,7 @@ public class BranchService : IBranchService
     {
         try
         {
-            return await _branchRepository.ListAsync();
+            return await _branchRepository.ListAsync<Branch>(s => !s.IsDeleted);
         }
         catch (Exception ex)
         {

@@ -33,7 +33,7 @@ public class ProductService : IProductService
     {
         try
         {
-            return await _productRepository.ListAsync();
+            return await _productRepository.ListAsync<Product>(s => !s.IsDeleted);
         }
         catch (Exception ex)
         {

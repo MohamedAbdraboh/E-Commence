@@ -33,7 +33,7 @@ public class StoreService : IStoreService
     {
         try
         {
-            return await _storeRepository.ListAsync();
+            return await _storeRepository.ListAsync<Store>(s => !s.IsDeleted);
         }
         catch (Exception ex)
         {
