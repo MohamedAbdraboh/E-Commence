@@ -5,6 +5,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { TableModule } from 'primeng/table';
 import { ToolbarModule } from 'primeng/toolbar';
 import { FileUploadModule } from 'primeng/fileupload';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { FileUploadModule } from 'primeng/fileupload';
     ToolbarModule,
     FileUploadModule,
   ],
-  declarations: [ProductsComponent],
+  declarations: [ProductsComponent, ProductCardComponent],
 })
 export class ProductsModule {}

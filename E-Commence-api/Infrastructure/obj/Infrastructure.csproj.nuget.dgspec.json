@@ -72,7 +72,7 @@
         "projectName": "Infrastructure",
         "projectPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mohamed.abdraboh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mohamed.abdraboh\\source\\repos\\E-Commence\\E-Commence-api\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\mohamed.abdraboh\\Source\\Repos\\E-Commence\\E-Commence-api\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages"

@@ -34,6 +34,8 @@ export class ProductsComponent implements OnInit {
         if (data && data['Products']) {
           if (!data['Products'].hasErrors) {
             this.products = data['Products'].data;
+
+            console.log(' this.products', this.products);
           }
         }
       },
